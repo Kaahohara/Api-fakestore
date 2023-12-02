@@ -30,7 +30,7 @@
   <br>
           
           <div class="flex items-center justify-center">
-             <button  class="bg-teal-950 mt-4 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" type="submit">Cadastrar Produto</button>
+             <button  class="bg-teal-950 mt-4 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" type="submit">Logar</button>
             </div>  
       
         </div> 

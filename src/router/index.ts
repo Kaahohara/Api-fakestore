@@ -5,15 +5,16 @@ export default createRouter({
   history: createWebHistory(),
   routes: [
     {
-      path: '/Products',
-      component: () => import('../views/Products.vue'),
-    
-    },
-    {
       path: '/',
       component: () => import('../views/Products.vue'),
     
     },
+    {
+      path: '/Products',
+      component: () => import('../views/Products.vue'),
+    
+    },
+
   
     {
       path: '/Atualizar/:id',

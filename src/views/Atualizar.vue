@@ -4,15 +4,16 @@
    
     <div class="container p-5 mt-4 max-w-screen-lg mx-auto rounded-lg p-0 bg-gray-200" v-if="products[0]">
       <div class="bg-teal-950 flex text-white font-bold py-2 px-4 rounded">Atualizar</div>
-      <div v-if="mostrarMensagem">
-          <p class="flex justify-center text-green-600">Produto atualizado com sucesso.</p>
-        </div>
+     
       <div class="flex items-center p-3 justify-center" >
         <div class="w-2/4">
         <img :src="products[0].image" :alt="products[0].title" class="w-38 h-full object-center">
       </div>
       <div class="w-2/3 ml-4">
-        <div class=" w-full border-b border-t border-l border-r rounded-lg border-black w-full">
+        <div v-if="mostrarMensagem">
+          <p class="flex justify-center text-green-600">Produto atualizado com sucesso!</p>
+        </div>
+        <div class=" w-full border-b border-t border-l border-r rounded-lg mt-5 border-black w-full">
           <input
             v-model="dadosFormulario.title"
             type="text"

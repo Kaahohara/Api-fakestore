@@ -1,5 +1,5 @@
 <template>
-<div v-if="mensagem" class="fixed flex items-center top-0 bg-red-800 w-full p-4">
+<div v-if="mensagem" class="fixed flex h-10 items-center top-3 bg-red-800 right-0 p-4 rounded-lg">
   <p class="text-white flex justify-center text-center text-red-600">Deletado</p>
 </div>
 
