@@ -36,7 +36,7 @@
         </div> 
      
     <div class="w-1/2 flex items-end ">
-      <img src="./assets/stores.png" class="h-full rounded-br-lg rounded-tr-lg" />
+      <img src="../assets/stores.png" class="h-full rounded-br-lg rounded-tr-lg" />
           <br>
     </div>
 
