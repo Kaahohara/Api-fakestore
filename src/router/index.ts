@@ -1,37 +1,36 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
+import Products from '../views/Products.vue';
+import Atualizar from '../views/Atualizar.vue';
+import Cadastrar from '../views/Cadastrar.vue';
+import Login from '../views/Login.vue';
 
+const routes: RouteRecordRaw[] = [
+  {
+    path: '/',
+    component: Products,
+  },
+  {
+    path: '/Products',
+    component: Products,
+  },
+  {
+    path: '/Atualizar/:id',
+    name: 'atualizar',
+    component: Atualizar,
+  },
+  {
+    path: '/cadastrar',
+    component: Cadastrar,
+  },
+  {
+    path: '/Login',
+    component: Login,
+  },
+];
 
-export default createRouter({
-  history: createWebHistory(),
-  routes: [
-    {
-      path: '/',
-      component: () => import('../views/Products.vue'),
-    
-    },
-    {
-      path: '/Products',
-      component: () => import('../views/Products.vue'),
-    
-    },
+const router = createRouter({
+  history: createWebHistory('/Api-fakestore/'),  
+  routes,
+});
 
-  
-    {
-      path: '/Atualizar/:id',
-      name:'atualizar',
-      component: () => import('../views/Atualizar.vue'),
-    },
-
-    {
-      path: '/cadastrar',
-      component: () => import('../views/Cadastrar.vue'),
-    },
-   
-    {
-      path: '/Login',
-      component: () => import('../views/Login.vue'),
-    },
-    
-
-  ],
-})
+export default router;
