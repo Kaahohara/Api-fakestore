@@ -9,7 +9,7 @@
               <p class="flex justify-center text-green-600">{{ mensagem }}</p>
     </div>
         <div class="flex items-center justify-center">
-        <img src="./assets/perfil.png" alt="Logo" class="mt-5 rounded-full w-32 h-32 object-cover" />
+        <img src="../assets/perfil.png" alt="Logo" class="mt-5 rounded-full w-32 h-32 object-cover" />
         </div>
     
         <div class="flex mt-4 items-center ">
