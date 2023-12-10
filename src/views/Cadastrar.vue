@@ -25,7 +25,7 @@
       </div>
 
       <div class="w-1/2 flex items-end">
-        <img src="/assets/stores.png" class="h-full rounded-br-lg rounded-tr-lg" />
+        <img src="stores.png" class="h-full rounded-br-lg rounded-tr-lg" />
       </div>
     </div>
   </form>
